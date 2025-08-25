@@ -1,0 +1,32 @@
+{
+  "name": "ngx-compare-object",
+  "version": "1.19.0",
+  "author": "Rzo! <rzo.idev@gmail.com> (https://github.com/RzoDev)",
+  "description": "An Angular Class tool to compare an initial object with another modified version of itself.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RzoDev/ngx-compare-object.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RzoDev/ngx-compare-object/issues"
+  },
+  "homepage": "https://github.com/RzoDev/ngx-compare-object",
+  "keywords": [
+    "Angular",
+    "Angular 19",
+    "Compare object"
+  ],
+  "license":"MIT",
+  "peerDependencies": {
+    "@angular/common": "^19.2.0",
+    "@angular/core": "^19.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
