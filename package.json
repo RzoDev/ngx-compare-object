@@ -1,6 +1,6 @@
 {
   "name": "ngx-compare-object",
-  "version": "1.19.0",
+  "version": "1.19.1",
   "author": "Rzo! <rzo.idev@gmail.com> (https://github.com/RzoDev)",
   "description": "An Angular Class tool to compare an initial object with another modified version of itself.",
   "repository": {

@@ -1,4 +1,4 @@
-# NgxCompareObject [![npm version](https://badge.fury.io/js/ngx-compare-object.svg)](https://badge.fury.io/js/ngx-cam-shoot) [![Build Status](https://api.travis-ci.com/rzodev/ngx-compare-object.svg?branch=main)](https://app.travis-ci.com/github/rzodev/ngx-compare-object) [![Support](https://img.shields.io/badge/Support-Angular%2019%2B-blue.svg?style=flat-square)]() [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/RzoDev/ngx-compare-object/blob/main/LICENSE.md)
+# NgxCompareObject [![npm version](https://badge.fury.io/js/ngx-compare-object.svg)](https://badge.fury.io/js/ngx-compare-object) [![Build Status](https://api.travis-ci.com/rzodev/ngx-compare-object.svg?branch=main)](https://app.travis-ci.com/github/rzodev/ngx-compare-object) [![Support](https://img.shields.io/badge/Support-Angular%2019%2B-blue.svg?style=flat-square)]() [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/RzoDev/ngx-compare-object/blob/main/LICENSE.md)
 
 An Angular Class tool to compare an initial object with another modified version of itself.
 
@@ -49,7 +49,7 @@ import { NgxCompareObject } from 'ngx-compare-object';
 private fb = inject(FormBuilder);
 private route = inject(ActivatedRoute);
 
-private co!: CompareObject;
+private co!: NgxCompareObject<any>;
 form: FormGroup;
 @Input() id: string;
 
@@ -75,11 +75,11 @@ private initForm(user: IUser){
 
    const originalForm = this.form.value();
 
-   this.co = new CompareObject(originalForm);
+   this.co = new NgxCompareObject(originalForm);
 }
 
 hasChanges(): boolean{
-   if(!this.co) return;
+   if(!this.co) return false;
    const form = this.form.value();
    return !this.co.isSame(form);
 }
